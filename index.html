@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimchi</title>
+
+<style>
+  .container {
+    background-image: linear-gradient(to top, #8db596 10%, #bedbbb 90%);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 60px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: sans-serif;
+      }
+
+  h2 {
+    text-align: center;
+    border: 1px solid;
+    padding: 15px;
+    font-size: 35px;
+    border-radius: 4px;
+    font-family: cursive;
+       }
+
+   img {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+     border-radius: 10px;
+   }
+
+   p {
+     line-height: 1.5;
+     font-size: 18px;
+     margin: 20px 10px;
+     font-family: sans-serif;
+     text-align: justify;
+   }
+
+   button {
+     display: block;
+     margin: 20px auto;
+     background: #4ea060;
+     font-size: 20px;
+     font-family: cursive;
+     padding: 15px 20px;
+     border: none;
+     border-radius: 7px;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+     transition: all 200ms ease-in-out;
+    }
+
+   button:hover {
+     opacity: 0.8;
+     cursor: pointer;
+   }
+
+   .more-about {
+     text-decoration: none;
+     font-size: 16px;
+     font-family: sans-serif;
+     margin: 20px 10px;
+   }
+
+   .more-about:hover {
+     text-decoration: underline;
+   }
+
+   .footer {
+     text-align: center;
+     font-family: sans-serif;
+   }
+
+   
+</style>
+
+</head>
+<body>
+  <div class="container">
+
+    <h1>
+      The Best Korean Food
+    </h1>
+
+    <h2>
+      Kimchi 김치
+    </h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg"
+    alt="Kimchi" />
+
+    <p>
+      <strong>Kimchi</strong> is a staple in Korean cuisine, is a traditional side dish of salted and fermented vegetables, such as napa cabbage
+      and Korean radish, made with a widely varying selection of seasonings including gochugaru (chili powder), spring onions,
+      garlic, ginger, and jeotgal (salted seafood), etc. It is also used in a variety of soups.
+      <br />
+      There are hundreds of varieties of kimchi made with different vegetables as the main ingredients. The most common type
+      of kimchi is the napa cabbage kimchi.
+      Traditionally, kimchi was stored in-ground in large earthenware to prevent the kimchi from being frozen during the
+      winter months. 
+    </p>
+
+    <a href="https://en.wikipedia.org/wiki/Kimchi"
+    target="_blank"
+    class="more-about">
+    More about Kimchi on Wiki
+  </a>
+  <br />
+
+  <button class="buy-button">
+    Buy Delicious Kimchi
+  </button>
+
+  <br />
+  <p class="footer">
+    This page was built by 
+    <a href="https://www.instagram.com/coding.gosia/"
+    target="_blank">
+    Gosia Siechowicz
+  </a>
+  </p>
+  </div>
+
+  <script>
+    function buy() {
+      let name =prompt("What is your name?");
+      let email =prompt("What is your email address?");
+
+      if (name.length > 0) {
+
+      alert(
+        "Thank you, " +
+        name +
+        "! We'll be in touch by email, meanwhile have lot of Korean Kimchi!");
+    }
+  }
+    let buyButton =document.querySelector(".buy-button");
+    buyButton.addEventListener("click", buy);
+  </script>
+ </body>
+</html>
